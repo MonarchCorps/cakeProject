@@ -3,13 +3,12 @@ import TasterBoxesBackDropImage from "@/assets/images/TasterBoxesBackDropImage.j
 import illustration1 from "@/assets/icon/illustration 1.png";
 import illustration2 from "@/assets/icon/Illustration 2.png";
 import illustration3 from "@/assets/icon/illustration 3.png";
-import illustration4 from "@/assets/icon/illustration 4.png";
+import illustration4 from "@/assets/icon/Illustration 4.png";
 import {HeaderText} from "@/components/HeaderText.tsx";
 
 export const TasterBoxesPage = () => {
     return (
         <>
-
             <ImageCover objectPosition={"object-bottom"}
                         imageUrl={TasterBoxesBackDropImage}
                         title={"Taster Boxes"}
