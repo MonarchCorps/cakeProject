@@ -1,0 +1,1 @@
+export const DietaryNeeds = ["Gluten-Free", "Vegan", "Others (Specify)"]
