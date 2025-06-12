@@ -27,7 +27,7 @@ export const HomePage = () => {
                                 <Heart className="w-4 h-4" />
                             </Button>
                         </div>
-                        <div className={"relative bg-red-950 w-fit h-full"}>
+                        <div className={"relative w-fit h-full"}>
                             <img src={Subtract} className={"h-[656.3px] absolute top-1/3 w-[520.5px]"} alt=""/>
                             <img src={Subtract2} className={"h-[512.7px] w-[419.4px]"} alt=""/>
                         </div>
