@@ -19,20 +19,20 @@ export const WeddingCakePage = () => {
                         buttonText={"Book a Consultation"}
                         imageUrl={WeddingCakeBackDropImage}
             />
-            <div className={"py-8 h-[1100px] px-30 "}>
+            <div className={"py-8 px-5 lg:px-30 "}>
             <HeaderText heading={"Exquisite designs, unforgettable taste"}
                         subheading={"Whether your dream is a classic tiered beauty, a floral fantasy, or a bold modern statement, we design cakes that leave a lasting impression."}
             />
                 <div className={"flex py-8 justify-around items-center"}>
-                    <div className={"relative bg-black"}>
-                        <div className={"relative"}>
-                            <img src={Subtract} className={"h-[512.7px] z-2 w-[419.4px]"} alt=""/>
-                            <img src={Cute} className={"absolute top-0 left-0 w-fit h-16  z-2 "} alt=""/>
-                        </div>
-                        <div>
-                            <img src={Subtract1} className={"h-[512.7px] absolute bottom-70 left-50 translate-y-full z-3 w-[419.4px]"} alt=""/>
-                        </div>
-                    </div>
+                    {/*<div className={"relative"}>*/}
+                    {/*    <div className={"relative"}>*/}
+                    {/*        <img src={Subtract} className={"h-[512.7px] z-2 w-[419.4px]"} alt=""/>*/}
+                    {/*        <img src={Cute} className={"absolute top-0 left-0 w-fit h-16  z-2 "} alt=""/>*/}
+                    {/*    </div>*/}
+                    {/*    <div>*/}
+                    {/*        <img src={Subtract1} className={"h-[512.7px] absolute bottom-70 left-50 translate-y-full z-3 w-[419.4px]"} alt=""/>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                     <div>
                         <h1 className={"text-[#0F4C81] font-semibold"}>Features</h1>
                         <ol className={"flex flex-col gap-3 py-5 text-[#0F4C81]"}>

@@ -108,7 +108,7 @@ export const PageLayout = ({children}:PropsWithChildren) => {
                     </div>
                 </div>
                 <Separator className={"col-span-4 bg-[#0F4C81] my-5"}/>
-                <span className={"flex text-sm font-normal text-[#0F4C81] pb-5 justify-center items-center col-span-4"}>© {new Date().getFullYear()} Y2K Brand <Separator className="h-full mx-2 border-[0.7px] border-[#0F4C81]"
+                <span className={"flex flex-wrap text-sm font-normal text-[#0F4C81] pb-5 justify-center items-center col-span-4"}>© {new Date().getFullYear()} Y2K Brand <Separator className="h-full mx-2 border-[0.7px] border-[#0F4C81]"
                                                                         orientation={"vertical"}/> All rights reserved. <Separator className="h-full mx-2 border-[0.7px] border-[#0F4C81]"
                                                                                                                                    orientation={"vertical"}/> Designed by Michael
                 </span>

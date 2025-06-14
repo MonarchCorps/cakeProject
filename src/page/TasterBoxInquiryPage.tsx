@@ -14,7 +14,7 @@ export const TasterBoxInquiryPage = () => {
                         objectPosition={"object-[center_30%]"}
                         title={"Taster Box Inquiry Box"}
             />
-            <div className={"py-8 px-30 "}>
+            <div className={"py-8 px-5 lg:px-30 "}>
                 <p className={"capitalize text-xl my-5 font-semibold text-[#0F4C81]"}>Inquiry Form</p>
             <div className={"flex flex-col gap-5"}>
                 <Separator className={"border-1"}/>

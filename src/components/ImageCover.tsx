@@ -11,7 +11,7 @@ interface ImageCoverProps{
 }
 export const ImageCover = ({title, subtitle, buttonText, imageUrl, objectPosition, objectPosition1}: ImageCoverProps) => {
     return (
-        <div className={`relative w-full ${objectPosition1 ?? "h-[600px]"}`}>
+        <div className={`relative w-full h-[400px] ${objectPosition1 ? `lg:${objectPosition1}` : "lg:h-[600px]"}`}>
             <img src={imageUrl} className={`w-full object-cover h-full ${objectPosition ?? "object-bottom"}`} alt=""/>
             <div className={"flex flex-col justify-center w-full text-center  z-1 absolute top-1/4  gap-5 items-center"}>
                 <span className={"font-bold  text-white text-xl leading-tight"}>{title}</span>
