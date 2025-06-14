@@ -9,6 +9,8 @@ import {WeddingCakePage} from "@/page/WeddingCakePage.tsx";
 import {WeddingCakeCatalogue} from "@/page/WeddingCakeCatalogue.tsx";
 import {WorkshopPage} from "@/page/WorkshopPage.tsx";
 import {ShopPage} from "@/page/ShopPage.tsx";
+import {CelebrationCakePage} from "@/page/CelebrationCakePage.tsx";
+import {WishListPage} from "@/page/WishListPage.tsx";
 
 export const DashboardRoutes: RouteTypes[] = [
     {
@@ -42,6 +44,11 @@ export const DashboardRoutes: RouteTypes[] = [
         element: <WeddingCakeCatalogue/>,
     },
     {
+        name: RouteConstants.dashboard.wedding.celebration.name,
+        path: RouteConstants.dashboard.wedding.celebration.path,
+        element: <CelebrationCakePage/>,
+    },
+    {
         name: RouteConstants.dashboard.wedding.inquiry.name,
         path: RouteConstants.dashboard.wedding.inquiry.path,
         element: <WeddingCakeInquiryPage/>,
@@ -55,6 +62,11 @@ export const DashboardRoutes: RouteTypes[] = [
         name: RouteConstants.dashboard.shop.name,
         path: RouteConstants.dashboard.shop.path,
         element: <ShopPage/>,
+    },
+    {
+        name: RouteConstants.dashboard.wishlist.name,
+        path: RouteConstants.dashboard.wishlist.path,
+        element: <WishListPage/>,
     },
 ]
 

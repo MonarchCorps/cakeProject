@@ -8,10 +8,6 @@ export const RouteConstants = {
             path: "/ourStory",
             name: "Workspace"
         },
-        createWorkspace: {
-            path: "/create-workspace",
-            name: "Create Workspace"
-        },
         tasterbox: {
             path: "/tasterbox",
             name: "Tasterbox",
@@ -24,12 +20,16 @@ export const RouteConstants = {
             path: "/wedding",
             name: "wedding",
             catalogue: {
-                path: "catalogue",
+                path: "/catalogue",
                 name: "Wedding Cake Inquiry"
             },
             inquiry: {
                 path: "inquiry",
                 name: "Wedding Cake Inquiry"
+            },
+            celebration: {
+                path: "/celebration",
+                name: "Celebration Cake"
             }
         },
         workspace: {
@@ -39,6 +39,10 @@ export const RouteConstants = {
         shop: {
             path: "/shop",
             name: "shop",
+        },
+        wishlist: {
+            path: "/wishlist",
+            name: "wishlist",
         }
     }
 }

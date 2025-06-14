@@ -15,11 +15,11 @@ import BespokeCakeInquiryBackDropImage from "@/assets/images/BespokeCakeInquiryB
 export const HomePage = () => {
     return (
         <div>
-            <div className={"h-[918px] relative w-full"}>
-                <img src={HomeBackDrop} className={"w-full object-cover h-full object-bottom"} alt="HomeBackDrop"/>
+            <div className={"lg:h-[918px] h-[335px] relative w-full"}>
+                <img src={HomeBackDrop} className={"w-full object-cover h-full object-top"} alt="HomeBackDrop"/>
                 <div className={"flex justify-around items-center w-full z-2 absolute top-0 left-1/2 -translate-x-1/2 h-full"}>
                     <div className={"w-full h-full flex justify-around items-center"}>
-                        <div className={"flex flex-col gap-3"}>
+                        <div className={"flex flex-col text-center gap-3 justify-between items-center lg:flex lg:flex-col lg:gap-3 lg:text-start lg:items-start"}>
                             <span className={"capitalize text-white z-2"}>"Because Cake Deserves its own moment"</span>
                             <span className={"text-white z-2"}>Discover luxury cakes, handcrafted to celebrate life’s sweetest moments</span>
                             <Button className="w-[190px] bg-[#E04F85] py-5 px-20 rounded-[2rem] flex items-center gap-1 capitalize text-white">
@@ -27,7 +27,7 @@ export const HomePage = () => {
                                 <Heart className="w-4 h-4" />
                             </Button>
                         </div>
-                        <div className={"relative w-fit h-full"}>
+                        <div className={"lg:relative lg:block lg:w-fit lg:h-full hidden"}>
                             <img src={Subtract} className={"h-[656.3px] absolute top-1/3 w-[520.5px]"} alt=""/>
                             <img src={Subtract2} className={"h-[512.7px] w-[419.4px]"} alt=""/>
                         </div>
@@ -37,11 +37,12 @@ export const HomePage = () => {
             </div>
             <div className={"py-12"}>
                 <HeaderText
+                    className1={"#E04F85]"}
                     heading={"Designed for every occasion"}
                     subheading={"Indulge in our delicious offerings—from tasting boxes to workshops, we bring your cake dreams to life."}
                 />
                 <div className={"flex flex-col gap-3"}>
-                    <div className={"grid grid-cols-2 w-full p-15 gap-y-8 place-items-center"}>
+                    <div className={"grid sm:grid-cols-2 w-full sm:p-15 gap-y-8 place-items-center"}>
                         {
                             homePageImagesWithText.map((item) => {
                                 return (
@@ -80,7 +81,7 @@ export const HomePage = () => {
                     {/*    <CarouselPrevious />*/}
                     {/*    <CarouselNext />*/}
                     {/*</Carousel>*/}
-                    <div className={"flex gap-3"}>
+                    <div className={"flex gap-3 overflow-hidden"}>
                         <img src={GoldenBallsCake} className={"h-[260px] w-[240px]"} alt="Blue HomePage Subtract"/>
                         <img src={BespokeCakeInquiryBackDropImage} className={"h-[260px] w-[240px]"} alt="Blue HomePage Subtract"/>
                         <img src={CuteCouple} className={"h-[260px] w-[240px]"} alt="Blue HomePage Subtract"/>
@@ -110,11 +111,11 @@ export const HomePage = () => {
                     Flavour of the Month
                     <img src={StarVector} className={"w-4 h-4"} alt={"StarVector"} />
                 </h3>
-                    <div className={"flex items-center py-4 px-10 mx-15 rounded-lg border border-dotted border-[#F7CAC9] gap-3"}>
-                        <img src={HomeBackDrop} className={"w-[523px] rounded-l-[5rem] object-cover h-[523px] object-bottom"} alt="HomeBackDrop"/>
-                        <div className={"flex flex-col justify-center gap-3"}>
+                    <div className={"flex-col flex lg:flex-row items-center py-4 px-10 mx-15 rounded-lg border border-dotted border-[#F7CAC9] gap-3"}>
+                        <img src={HomeBackDrop} className={"lg:w-[523px] rounded-[2rem] lg:rounded-l-[5rem] object-cover lg:h-[523px] object-bottom"} alt="HomeBackDrop"/>
+                        <div className={"flex flex-col items-center justify-center gap-3"}>
                             <h2>Red Velvet Bliss</h2>
-                            <span className={"text-[#E04F85]"}>Indulge in the luxurious charm of our Red Velvet Bliss; a velvety smooth cake with a hint of cocoa, layered with rich cream cheese frosting.
+                            <span className={"text-[#E04F85] text-center items-center"}>Indulge in the luxurious charm of our Red Velvet Bliss; a velvety smooth cake with a hint of cocoa, layered with rich cream cheese frosting.
                                 This classic favourite is perfectly flavourful and ideal for celebrations or a little self-pampering.</span>
                             <Button className="w-[190px] bg-[#0F4C81] py-5 px-20 rounded-[2rem] flex items-center gap-1 capitalize text-white">
                                 Order Now
@@ -129,27 +130,19 @@ export const HomePage = () => {
                     subheading={"With 800+ events served, hegai cakes is the go-to for luxury cakes and curating indelible experiences."}
                     className={"text-[#0F4C81]"}
                 />
-                <div className={"flex items-center justify-center gap-2"}>
-                    <Button className="bg-[#0F4C81] h-8 w-8 rounded-full text-white">
-                        <ArrowLeft className="w-4 h-4" />
+                <div className={"flex items-center  justify-center gap-2"}>
+                    <Button className="bg-[#0F4C81] h-8 w-8 rounded-full text-white hidden lg:flex">
+                        <ArrowLeft className="w-4 h-4 " />
                     </Button>
                     <div className={"flex flex-col items-center justify-center gap-10"}>
-                        <span className={"text-[#0F4C81] tracking-wide text-sm font-normal"}>
+                        <span className={"text-[#0F4C81] text-center mx-5 tracking-wide text-sm font-normal"}>
                         “A pretty cake with great sponge! It was so moist!!! Everyone loved itt! Thank you so much again”
                     </span>
                         <span className={"text-[#0F4C81] tracking-wide text-normal font-normal"}> -M.K</span>
                     </div>
-                    <Button className="bg-[#0F4C81] h-8 w-8 rounded-full text-white">
+                    <Button className="bg-[#0F4C81] h-8 w-8 rounded-full text-white hidden lg:flex">
                         <ArrowRight className="w-4 h-4" />
                     </Button>
-                </div>
-                <div className={"flex items-center justify-center gap-2"}>
-                    <img src={CuteCouple} alt={"CuteCouple"} className={"w-[240px] h-[260px]"} />
-                    <img src={CuteCouple} alt={"CuteCouple"} className={"w-[240px] h-[260px]"} />
-                    <img src={CuteCouple} alt={"CuteCouple"} className={"w-[240px] h-[260px]"} />
-                    <img src={CuteCouple} alt={"CuteCouple"} className={"w-[240px] h-[260px]"} />
-                    <img src={CuteCouple} alt={"CuteCouple"} className={"w-[240px] h-[260px]"} />
-                    <img src={CuteCouple} alt={"CuteCouple"} className={"w-[240px] h-[260px]"} />
                 </div>
                 <div className={"flex items-center justify-center gap-2"}>
                     <span className={" bg-[#0F4C81] h-1.5 w-1.5 rounded-full"}/>
@@ -157,13 +150,21 @@ export const HomePage = () => {
                     <span className={" bg-white h-1.5 w-1.5 rounded-full"}/>
                     <span className={" bg-white h-1.5 w-1.5 rounded-full"}/>
                 </div>
+                <div className={"flex items-center justify-center gap-2 overflow-hidden"}>
+                    <img src={CuteCouple} alt={"CuteCouple"} className={"w-[240px] h-[260px]"} />
+                    <img src={CuteCouple} alt={"CuteCouple"} className={"w-[240px] h-[260px]"} />
+                    <img src={CuteCouple} alt={"CuteCouple"} className={"w-[240px] h-[260px]"} />
+                    <img src={CuteCouple} alt={"CuteCouple"} className={"w-[240px] h-[260px]"} />
+                    <img src={CuteCouple} alt={"CuteCouple"} className={"w-[240px] h-[260px]"} />
+                    <img src={CuteCouple} alt={"CuteCouple"} className={"w-[240px] h-[260px]"} />
+                </div>
             </div>
             <div className={"py-12 gap-8 justify-between items-center flex flex-col"}>
                 <div className="text-center items-center justify-center flex-col gap-1 flex ">
-                    <h3 className="text-lg text-[#E04F85] capitalize font-semibold w-fit mx-auto">
+                    <h3 className="text-lg text-center text-[#E04F85] capitalize font-semibold w-fit mx-auto">
                         {"Get sweet deals and updates!"}
                     </h3>
-                    <span className={`w-[700px] text-[#0F4C81]`}>
+                    <span className={`w-full mx-24 text-center text-[#0F4C81]`}>
                 {"Be the first to know about new products, discounts and what’s happening in Hegai Cakes"}
                  </span>
                 </div>

@@ -9,6 +9,7 @@ import {SiInstagram, SiTiktok} from "react-icons/si";
 import {Separator} from "@/components/ui/separator.tsx";
 import {navConstants} from "@/utils/constants/navConstants.ts";
 import {useLocation, useNavigate} from "react-router-dom";
+import {MobileNav} from "@/components/MenuIcon.tsx";
 export const PageLayout = ({children}:PropsWithChildren) => {
     const navigate = useNavigate();
     const location = useLocation();
@@ -20,11 +21,12 @@ export const PageLayout = ({children}:PropsWithChildren) => {
                     <span>Order your taster boxes!</span>
                     <Heart className={"w-4 h-4"}/>
                 </div>
-                <div className="flex gap-1 px-20 w-full bg-[#FFF] items-center py-5 justify-between">
-                    <div>
-                        <img src={logo} alt="logo" className={"w-[105px] h-[58.88px]"}/>
+                <div className="flex gap-1 lg:px-20 px-5 w-full lg:bg-[#FFF] items-center py-5 justify-between bg-[#A7C7E7]">
+                    <div className="lg:hidden w-7 h-7 rounded-full bg-[#0F4C81] flex items-center justify-center">
+                        <ShoppingBag className="w-4 h-4 text-white " />
                     </div>
-                    <div className="flex gap-1">
+                        <img src={logo} alt="logo" className={"w-[105px] h-[58.88px]"}/>
+                    <div className="lg:flex lg:gap-1 hidden">
                         {
                             navConstants.map((navConstant) => {
                                 return (
@@ -36,7 +38,10 @@ export const PageLayout = ({children}:PropsWithChildren) => {
                             })
                         }
                     </div>
-                    <div className={"flex gap-2"}>
+                    <div className={"flex items-center justify-center lg:hidden"}>
+                        <MobileNav/>
+                    </div>
+                    <div className={"hidden lg:flex lg:gap-2"}>
                         <div className="w-7 h-7 rounded-full bg-[#A7C7E7] flex items-center justify-center">
                             <Heart className="w-4 h-4 text-[#0F4C81]" />
                         </div>
@@ -52,8 +57,8 @@ export const PageLayout = ({children}:PropsWithChildren) => {
             <div className={" w-full "}>
                 {children}
             </div>
-            <footer className={"w-full grid grid-cols-4 pt-12 py-5 bg-[#A7C7E7]"}>
-                <div className="flex flex-col items-center  gap-5">
+            <footer className={"w-full flex flex-col gap-10 pl-8 lg:grid lg:grid-cols-4 pt-12 py-5 bg-[#A7C7E7]"}>
+                <div className="flex flex-col lg:items-center gap-5">
                     <img src={logo} alt="logo" className={"w-[105px] h-[58.88px]"}/>
                     <div className={"flex gap-3"}>
                         <div className="w-7 h-7 rounded-full bg-[#0F4C81] flex items-center justify-center">
@@ -105,7 +110,7 @@ export const PageLayout = ({children}:PropsWithChildren) => {
                 <Separator className={"col-span-4 bg-[#0F4C81] my-5"}/>
                 <span className={"flex text-sm font-normal text-[#0F4C81] pb-5 justify-center items-center col-span-4"}>© {new Date().getFullYear()} Y2K Brand <Separator className="h-full mx-2 border-[0.7px] border-[#0F4C81]"
                                                                         orientation={"vertical"}/> All rights reserved. <Separator className="h-full mx-2 border-[0.7px] border-[#0F4C81]"
-                                                                                                                                   orientation={"vertical"}/> Designed by Chinaza
+                                                                                                                                   orientation={"vertical"}/> Designed by Michael
                 </span>
             </footer>
         </div>
