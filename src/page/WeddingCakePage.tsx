@@ -1,13 +1,10 @@
-import {ImageCover} from "@/components/ImageCover.tsx";
+import { ImageCover } from "@/components/ImageCover.tsx";
 import WeddingCakeBackDropImage from "../assets/images/WeddingCakeBackDropImage.png"
-import {HeaderText} from "@/components/HeaderText.tsx";
-import Subtract from "@/assets/images/Subtract (2).png";
-import Subtract1 from "../assets/images/Subtract (3).png";
-import Cute from "../assets/images/CuteCouple.png";
-import {Button} from "@/components/ui/button.tsx";
-import {ArrowRightIcon} from "lucide-react";
-import {useNavigate} from "react-router-dom";
-import {RouteConstants} from "@/utils/constants/RouteConstants.ts";
+import { HeaderText } from "@/components/HeaderText.tsx";
+import { Button } from "@/components/ui/button.tsx";
+import { ArrowRightIcon } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { RouteConstants } from "@/utils/constants/RouteConstants.ts";
 
 
 export const WeddingCakePage = () => {
@@ -15,14 +12,14 @@ export const WeddingCakePage = () => {
     return (
         <div>
             <ImageCover objectPosition={"object-center"} title={"Wedding Cakes"}
-                        subtitle={"Our Wedding Cakes are designed to reflect your unique love story, blending stunning artistry with mouthwatering flavours."}
-                        buttonText={"Book a Consultation"}
-                        imageUrl={WeddingCakeBackDropImage}
+                subtitle={"Our Wedding Cakes are designed to reflect your unique love story, blending stunning artistry with mouthwatering flavours."}
+                buttonText={"Book a Consultation"}
+                imageUrl={WeddingCakeBackDropImage}
             />
             <div className={"py-8 px-5 lg:px-30 "}>
-            <HeaderText heading={"Exquisite designs, unforgettable taste"}
-                        subheading={"Whether your dream is a classic tiered beauty, a floral fantasy, or a bold modern statement, we design cakes that leave a lasting impression."}
-            />
+                <HeaderText heading={"Exquisite designs, unforgettable taste"}
+                    subheading={"Whether your dream is a classic tiered beauty, a floral fantasy, or a bold modern statement, we design cakes that leave a lasting impression."}
+                />
                 <div className={"flex py-8 justify-around items-center"}>
                     {/*<div className={"relative"}>*/}
                     {/*    <div className={"relative"}>*/}
@@ -48,7 +45,7 @@ export const WeddingCakePage = () => {
                         </ol>
                         <Button onClick={() => navigate(RouteConstants.dashboard.wedding.catalogue.path)} className={"bg-[#0F4C81] w-2/5 py-[1.4rem] rounded-4xl"}>
                             {"View Catalogue"}
-                            <ArrowRightIcon className={"w-[32px] h-[32px]}"}/>
+                            <ArrowRightIcon className={"w-[32px] h-[32px]}"} />
                         </Button>
                     </div>
                 </div>
