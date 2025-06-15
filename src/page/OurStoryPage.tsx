@@ -16,9 +16,9 @@ export const OurStoryPage = () => {
                         <div className={"w-[300px] h-[400px] md:w-[400px] md:h-[582px]"}>
                         <img src={Founder} className={"w-full h-full object-cover object-top"} alt={"Founder"} />
                         </div>
-                        <div className={"flex flex-col items-center p-8 gap-5 w-[350px] lg:w-[654px]"}>
-                        <p className={"capitalize font-bold text-center lg:text-left text-2xl text-[#0F4C81]"}>How the Founder got here</p>
-                            <p className={"font-[500] text-white text-center md:text-left text-sm lg:text-xl leading-tight"}>
+                        <div className={"flex flex-col items-center lg:items-start p-8 gap-5 w-[350px] lg:w-[654px]"}>
+                        <p className={"capitalize font-bold font-swash text-center lg:text-left text-2xl text-[#0F4C81]"}>How the Founder got here</p>
+                            <p className={" font-medium text-white text-center md:text-left text-sm lg:text-[16px] leading-tight"}>
                                 Studying to become a Chemical Engineer meant that processes were part and parcel of how I viewed things.
                                 On the flip side, being a major sweet tooth with a natural flair for working with my hands, I landed at the
                                 Skills Fair hosted by the Blaze Student Society at The University of Manchester. Fast-forward to today, in Year 10 since the conception of Hegai Cakes,

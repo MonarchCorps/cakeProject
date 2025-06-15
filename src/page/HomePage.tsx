@@ -20,7 +20,7 @@ export const HomePage = () => {
                 <div className={"flex justify-around items-center w-full z-2 absolute top-0 left-1/2 -translate-x-1/2 h-full"}>
                     <div className={"w-full h-full flex justify-around items-center"}>
                         <div className={"flex flex-col text-center gap-3 justify-between items-center lg:flex lg:flex-col lg:gap-3 lg:text-start lg:items-start"}>
-                            <span className={"capitalize text-white z-2"}>"Because Cake Deserves its own moment"</span>
+                            <span className={"capitalize text-4xl font-extrabold font-swash text-white z-2"}>"Because Cake Deserves its own moment"</span>
                             <span className={"text-white z-2"}>Discover luxury cakes, handcrafted to celebrate life’s sweetest moments</span>
                             <Button className="w-[190px] bg-[#E04F85] py-5 px-20 rounded-[2rem] flex items-center gap-1 capitalize text-white">
                                 Order Now
