@@ -14,6 +14,7 @@ export const WeddingCakePage = () => {
             <ImageCover objectPosition={"object-center"} title={"Wedding Cakes"}
                 subtitle={"Our Wedding Cakes are designed to reflect your unique love story, blending stunning artistry with mouthwatering flavours."}
                 buttonText={"Book a Consultation"}
+                onClick={() => navigate(`/wedding/inquiry`)}
                 imageUrl={WeddingCakeBackDropImage}
             />
             <div className={"py-8 px-5 lg:px-30 "}>
