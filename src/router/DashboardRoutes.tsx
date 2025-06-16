@@ -11,6 +11,7 @@ import { WorkshopPage } from "@/page/WorkshopPage.tsx";
 import { ShopPage } from "@/page/ShopPage.tsx";
 import { CelebrationCakePage } from "@/page/CelebrationCakePage.tsx";
 import { WishListPage } from "@/page/WishListPage.tsx";
+import { WorkshopInquiryPage } from "@/page/WorkshopInquiryPage";
 
 
 const joinPaths = (...parts: string[]) => '/' + parts.map(p => p.replace(/^\/|\/$/g, '')).join('/');
@@ -60,6 +61,11 @@ export const DashboardRoutes: RouteTypes[] = [
         name: RouteConstants.dashboard.workspace.name,
         path: RouteConstants.dashboard.workspace.path,
         element: <WorkshopPage />
+    },
+    {
+        name: RouteConstants.dashboard.workspace.inquiry.name,
+        path: joinPaths(RouteConstants.dashboard.workspace.path, RouteConstants.dashboard.workspace.inquiry.path),
+        element: <WorkshopInquiryPage />
     },
     {
         name: RouteConstants.dashboard.shop.name,

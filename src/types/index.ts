@@ -1,14 +1,3 @@
-export type CreateWorkShopBookingType = {
-    full_name: string;
-    email: string;
-    phone_number: string;
-    Number_of_participants: number;
-    preferred_date: string; // ISO format: "YYYY-MM-DD"
-    type_and_flavour: string;
-    desired_outcome: string;
-    additional_details?: string;
-}
-
 export type CreateBespokeCakeInquiryType = {
     event_type: string;
     event_date: string; // ISO format

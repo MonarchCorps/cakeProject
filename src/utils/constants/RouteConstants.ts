@@ -1,5 +1,5 @@
 export const RouteConstants = {
-    dashboard:{
+    dashboard: {
         dashboard: {
             path: "/dashboard",
             name: "Dashboard"
@@ -35,6 +35,10 @@ export const RouteConstants = {
         workspace: {
             path: "/workspace",
             name: "workspace",
+            inquiry: {
+                path: "inquiry",
+                name: "Book a Workshop"
+            }
         },
         shop: {
             path: "/shop",
