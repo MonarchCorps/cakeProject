@@ -26,17 +26,3 @@ export type CreateBespokeCakeInquiryType = {
     phone_number: string;
     additional_details?: string;
 }
-
-export type CreateWeddingCakeInquiryType = {
-    wedding_date: string; // ISO date format e.g. "2025-11-20"
-    wedding_venue: string;
-    number_of_tiers: number;
-    number_of_guests: string;
-    cake_flavours: string;
-    dietary_needs: string;
-    design_inspiration: string;
-    couples_names: string;
-    email: string;
-    phone_number: string;
-    additional_details?: string;
-}

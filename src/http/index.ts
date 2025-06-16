@@ -1,6 +1,7 @@
 import type { TasterBoxInquiryType } from "@/schema/tasterbox-inquiry";
+import type { WeddingCakeInquiryType } from "@/schema/weddingcake-inquiry";
 import pb from "@/services";
-import type { CreateBespokeCakeInquiryType, CreateWeddingCakeInquiryType, CreateWorkShopBookingType } from "@/types";
+import type { CreateBespokeCakeInquiryType, CreateWorkShopBookingType } from "@/types";
 
 export async function createWorkShopBooking(data: CreateWorkShopBookingType) {
     try {
@@ -33,7 +34,7 @@ export async function createBespokeCakeInquiry(data: CreateBespokeCakeInquiryTyp
 }
 
 
-export async function createWeddingCakeInquiry(data: CreateWeddingCakeInquiryType) {
+export async function createWeddingCakeInquiry(data: WeddingCakeInquiryType) {
     try {
         const record = await pb.collection("weddingcakeinquiry").create(data);
         return record;
