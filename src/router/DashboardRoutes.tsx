@@ -12,7 +12,7 @@ import { ShopPage } from "@/page/ShopPage.tsx";
 import { CelebrationCakePage } from "@/page/CelebrationCakePage.tsx";
 import { WishListPage } from "@/page/WishListPage.tsx";
 import { WorkshopInquiryPage } from "@/page/WorkshopInquiryPage";
-
+import ShoppingCart from "@/page/ShoppingCart";
 
 const joinPaths = (...parts: string[]) => '/' + parts.map(p => p.replace(/^\/|\/$/g, '')).join('/');
 
@@ -76,5 +76,10 @@ export const DashboardRoutes: RouteTypes[] = [
         name: RouteConstants.dashboard.wishlist.name,
         path: RouteConstants.dashboard.wishlist.path,
         element: <WishListPage />
+    },
+    {
+        name: RouteConstants.dashboard.cart.name,
+        path: RouteConstants.dashboard.cart.path,
+        element: <ShoppingCart />
     }
 ];

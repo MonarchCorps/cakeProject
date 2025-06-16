@@ -47,6 +47,10 @@ export const RouteConstants = {
         wishlist: {
             path: "/wishlist",
             name: "wishlist",
+        },
+        cart: {
+            path: "/cart",
+            name: "Shopping cart",
         }
     }
 }

@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button.tsx";
 import { SiInstagram, SiTiktok } from "react-icons/si";
 import { Separator } from "@/components/ui/separator.tsx";
 import { navConstants } from "@/utils/constants/navConstants.ts";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { MobileNav } from "@/components/MenuIcon.tsx";
 import { Toaster } from "@/components/ui/Toaster";
 export const PageLayout = ({ children }: PropsWithChildren) => {
@@ -26,7 +26,9 @@ export const PageLayout = ({ children }: PropsWithChildren) => {
                     <div className="lg:hidden w-7 h-7 rounded-full bg-[#0F4C81] flex items-center justify-center">
                         <ShoppingBag className="w-4 h-4 text-white " />
                     </div>
-                    <img src={logo} alt="logo" className={"w-[105px] h-[58.88px]"} />
+                    <Link to={"/"}>
+                        <img src={logo} alt="logo" className={"w-[105px] h-[58.88px]"} />
+                    </Link>
                     <div className="lg:flex lg:gap-1 hidden">
                         {
                             navConstants.map((navConstant) => {
@@ -46,15 +48,15 @@ export const PageLayout = ({ children }: PropsWithChildren) => {
                         <div className="w-7 h-7 rounded-full bg-[#A7C7E7] flex items-center justify-center">
                             <Heart className="w-4 h-4 text-[#0F4C81]" />
                         </div>
-                        <div className="w-7 h-7 rounded-full bg-[#A7C7E7] flex items-center justify-center">
+                        <Link to={"/cart"} className="w-7 h-7 rounded-full bg-[#A7C7E7] flex items-center justify-center">
                             <ShoppingBag className="w-4 h-4 text-[#0F4C81]" />
-                        </div>
+                        </Link>
                         <div className="w-7 h-7 rounded-full bg-[#A7C7E7] flex items-center justify-center">
                             <Search className="w-4 h-4 text-[#0F4C81]" />
                         </div>
                     </div>
                 </div>
-            </nav>
+            </nav >
             <div className={" w-full "}>
                 {children}
             </div>
@@ -115,6 +117,6 @@ export const PageLayout = ({ children }: PropsWithChildren) => {
                 </span>
             </footer>
             <Toaster />
-        </div>
+        </div >
     )
 }
