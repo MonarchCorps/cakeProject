@@ -1,5 +1,6 @@
+import type { TasterBoxInquiryType } from "@/schema/tasterbox-inquiry";
 import pb from "@/services";
-import type { CreateBespokeCakeInquiryType, CreateTasteBoxInquiryType, CreateWeddingCakeInquiryType, CreateWorkShopBookingType } from "@/types";
+import type { CreateBespokeCakeInquiryType, CreateWeddingCakeInquiryType, CreateWorkShopBookingType } from "@/types";
 
 export async function createWorkShopBooking(data: CreateWorkShopBookingType) {
     try {
@@ -11,7 +12,7 @@ export async function createWorkShopBooking(data: CreateWorkShopBookingType) {
     }
 }
 
-export async function createTasteBoxInquiry(data: CreateTasteBoxInquiryType) {
+export async function createTasteBoxInquiry(data: TasterBoxInquiryType) {
     try {
         const record = await pb.collection("TasterBoxInquiry").create(data);
         return record;

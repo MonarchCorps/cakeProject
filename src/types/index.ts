@@ -9,21 +9,6 @@ export type CreateWorkShopBookingType = {
     additional_details?: string;
 }
 
-export type CreateTasteBoxInquiryType = {
-    event_type: string;
-    event_date: string; // ISO format
-    event_venue: string;
-    delivery_time: string;
-    no_of_taster_boxes: number;
-    flavlors_list: string;
-    dietary_needs: string;
-    company_name: string;
-    contact_name: string;
-    email: string;
-    phone_number: string;
-    additional_details?: string;
-}
-
 export type CreateBespokeCakeInquiryType = {
     event_type: string;
     event_date: string; // ISO format
