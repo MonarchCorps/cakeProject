@@ -51,6 +51,14 @@ export const RouteConstants = {
         cart: {
             path: "/cart",
             name: "Shopping cart",
+        },
+        privacyPolicy: {
+            path: "/privacy-policy",
+            name: "Privacy Policy"
+        },
+        shippingRefundPolicy: {
+            path: "/shipping-refund-policy",
+            name: "Shipping & Refund Policy"
         }
     }
 }

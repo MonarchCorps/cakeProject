@@ -98,8 +98,8 @@ export const PageLayout = ({ children }: PropsWithChildren) => {
                         <span className={"text-[#0F4C81] font-light"}>Book a Consultation</span>
                         <span className={"text-[#0F4C81] font-light"}>Shop</span>
                         <span className={"text-[#0F4C81] font-light"}>Taster Box Enquiry</span>
-                        <span className={"text-[#0F4C81] font-light"}>Shipping & Refund Policy</span>
-                        <span className={"text-[#0F4C81] font-light"}>Privacy Policy</span>
+                        <Link to={"/shipping-refund-policy"} className={"text-[#0F4C81] font-light"}>Shipping & Refund Policy</Link>
+                        <Link to={"/privacy-policy"} className={"text-[#0F4C81] font-light"}>Privacy Policy</Link>
                     </div>
                 </div>
                 <div className={"flex flex-col"}>

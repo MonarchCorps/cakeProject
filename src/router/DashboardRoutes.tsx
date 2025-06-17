@@ -13,6 +13,8 @@ import { CelebrationCakePage } from "@/page/CelebrationCakePage.tsx";
 import { WishListPage } from "@/page/WishListPage.tsx";
 import { WorkshopInquiryPage } from "@/page/WorkshopInquiryPage";
 import ShoppingCart from "@/page/ShoppingCart";
+import PrivacyPolicy from "@/page/PrivacyPolicy";
+import ShippingRefundPolicy from "@/page/ShopRefundPolicy";
 
 const joinPaths = (...parts: string[]) => '/' + parts.map(p => p.replace(/^\/|\/$/g, '')).join('/');
 
@@ -81,5 +83,15 @@ export const DashboardRoutes: RouteTypes[] = [
         name: RouteConstants.dashboard.cart.name,
         path: RouteConstants.dashboard.cart.path,
         element: <ShoppingCart />
+    }, 
+    {
+        name: RouteConstants.dashboard.privacyPolicy.name,
+        path: RouteConstants.dashboard.privacyPolicy.path,
+        element: <PrivacyPolicy />
+    },
+    {
+        name: RouteConstants.dashboard.shippingRefundPolicy.name,
+        path: RouteConstants.dashboard.shippingRefundPolicy.path,
+        element: <ShippingRefundPolicy />
     }
 ];
