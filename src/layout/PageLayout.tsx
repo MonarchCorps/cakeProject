@@ -62,7 +62,9 @@ export const PageLayout = ({ children }: PropsWithChildren) => {
             </div>
             <footer className={"w-full flex flex-col gap-10 pl-8 lg:grid lg:grid-cols-4 pt-12 py-5 bg-[#A7C7E7]"}>
                 <div className="flex flex-col lg:items-center gap-5">
-                    <img src={logo} alt="logo" className={"w-[105px] h-[58.88px]"} />
+                    <Link to={"/"}>
+                        <img src={logo} alt="logo" className={"w-[105px] h-[58.88px]"} />
+                    </Link>
                     <div className={"flex gap-3"}>
                         <div className="w-7 h-7 rounded-full bg-[#0F4C81] flex items-center justify-center">
                             <SiTiktok className="w-4 h-4 text-white" />

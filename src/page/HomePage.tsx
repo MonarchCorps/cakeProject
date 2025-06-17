@@ -10,9 +10,12 @@ import StarVector from "@/assets/images/StarVector.png";
 import CuteCouple from "@/assets/images/CuteCouple.png";
 import GoldenBallsCake from "@/assets/images/GoldenBallsCake.jpg";
 import BespokeCakeInquiryBackDropImage from "@/assets/images/BespokeCakeInquiryBackDropImage.jpg";
+import { useNavigate } from "react-router-dom";
 
 
 export const HomePage = () => {
+    const navigate = useNavigate();
+
     return (
         <div>
             <div className={"lg:h-[918px] h-[335px] relative w-full"}>
@@ -22,7 +25,9 @@ export const HomePage = () => {
                         <div className={"flex flex-col text-center gap-3 justify-between items-center lg:flex lg:flex-col lg:gap-3 lg:text-start lg:items-start"}>
                             <span className={"capitalize text-4xl font-extrabold font-swash text-white z-2"}>"Because Cake Deserves its own moment"</span>
                             <span className={"text-white z-2"}>Discover luxury cakes, handcrafted to celebrate life’s sweetest moments</span>
-                            <Button className="w-[190px] bg-[#E04F85] py-5 px-20 rounded-[2rem] flex items-center gap-1 capitalize text-white">
+                            <Button
+                            onClick={() => navigate("/tasterbox/inquiry")}
+                            className="w-[190px] bg-[#E04F85] py-5 px-20 rounded-[2rem] flex items-center gap-1 capitalize text-white">
                                 Order Now
                                 <Heart className="w-4 h-4" />
                             </Button>
@@ -99,7 +104,7 @@ export const HomePage = () => {
                             <ArrowRight className="w-4 h-4" />
                         </Button>
                     </div>
-                    <Button className="w-[190px] bg-[#0F4C81] py-5 px-20 rounded-[2rem] flex items-center gap-1 capitalize text-white">
+                    <Button onClick={() => navigate("/tasterbox/inquiry")} className="w-[190px] bg-[#0F4C81] py-5 px-20 rounded-[2rem] flex items-center gap-1 capitalize text-white">
                         Order Now
                         <ArrowRight className="w-4 h-4" />
                     </Button>
@@ -117,7 +122,7 @@ export const HomePage = () => {
                             <h2>Red Velvet Bliss</h2>
                             <span className={"text-[#E04F85] text-center items-center"}>Indulge in the luxurious charm of our Red Velvet Bliss; a velvety smooth cake with a hint of cocoa, layered with rich cream cheese frosting.
                                 This classic favourite is perfectly flavourful and ideal for celebrations or a little self-pampering.</span>
-                            <Button className="w-[190px] bg-[#0F4C81] py-5 px-20 rounded-[2rem] flex items-center gap-1 capitalize text-white">
+                            <Button onClick={() => navigate("/tasterbox/inquiry")} className="w-[190px] bg-[#0F4C81] py-5 px-20 rounded-[2rem] flex items-center gap-1 capitalize text-white">
                                 Order Now
                                 <ArrowRight className="w-4 h-4" />
                             </Button>
