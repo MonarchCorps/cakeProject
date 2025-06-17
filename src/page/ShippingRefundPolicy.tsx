@@ -9,7 +9,7 @@ export default function ShippingRefundPolicy() {
         title="Shipping & Refund Policy"
         objectPosition="object-top"
       />
-      <div className="bg-white shadow-md p-8 px-20 mt-[-60px] relative z-10">
+      <div className="p-8 px-10 relative z-10 max-w-[60rem] mx-auto">
         <p className="mb-6">Thank you for choosing us!</p>
         <h2 className="font-bold mb-2">Shipping</h2>
         <p className="mb-6">All taster boxes made for pre-order (direct-to-customer) will be sent by courier such as Royal Mail. Once the boxes have left us, we are not responsible for delays outside of our control, however, we will do our best in keeping tabs on your delivery.</p>

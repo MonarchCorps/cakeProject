@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
                 title="Privacy Policy"
                 objectPosition="object-bottom"
             />
-            <div className="bg-white shadow-md p-8 px-20 mt-[-60px] relative z-10">
+            <div className="p-8 px-10 relative z-10 max-w-[60rem] mx-auto">
                 <p className="font-semibold mb-2">Effective Date: 09/01/2025</p>
                 <p className="mb-6">
                     Hegai Cakes values your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you visit our website.
